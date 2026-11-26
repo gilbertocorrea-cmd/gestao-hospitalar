@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="./docs/project-banner.svg" width="100%" alt="Banner GESTÃO HOSPITALAR">
+</div>
+
+<div align="center">
 
 # G E S T Ã O　H O S P I T A L A R
 

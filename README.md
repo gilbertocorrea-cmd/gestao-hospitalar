@@ -1,4 +1,71 @@
-# Sistema hospitalar
+<div align="center">
+
+# G E S T Ã O　H O S P I T A L A R
+
+### `JAVA • RECORDS • STREAMS • CONSOLE`
+
+**Aplicação Java de console para registrar pacientes e produzir consultas de triagem, busca e indicadores com orientação a objetos e programação funcional.**
+
+![JAVA](https://img.shields.io/badge/JAVA-0B1020?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
+![TERMINAL](https://img.shields.io/badge/TERMINAL-0B1020?style=for-the-badge&logo=gnometerminal&logoColor=22D3EE)
+![GIT](https://img.shields.io/badge/GIT-0B1020?style=for-the-badge&logo=git&logoColor=F05032)
+
+`GILBERTO CORRÊA` · `SOFTWARE ENGINEERING` · `PROJECT DOCUMENTATION`
+
+[Visão geral](#visao-geral) · [Recursos](#recursos) · [Arquitetura](#arquitetura) · [Execução](#execucao)
+
+</div>
+
+---
+
+<a id="visao-geral"></a>
+
+## `PROJECT // VISÃO GERAL`
+
+Aplicação Java de console para registrar pacientes e produzir consultas de triagem, busca e indicadores com orientação a objetos e programação funcional.
+
+<a id="recursos"></a>
+
+## `SYSTEM // INVENTÁRIO`
+
+| Recurso | Situação |
+| :--- | :--- |
+| Admissão de pacientes | `Presente` |
+| Triagem de urgentes e críticos | `Presente` |
+| Média de idade e total de segurados | `Presente` |
+| Busca por nome e paciente mais idoso | `Presente` |
+
+## `STRUCTURE // ORGANIZAÇÃO`
+
+- `src/Main.java` — inicialização
+- `src/model/` — `Paciente` e `NivelEmergencia`
+- `src/Repositorio/RepositorioPaciente.java` — armazenamento
+- `src/Service/Hospital.java` — operações
+- `src/UI/` — interação via terminal
+
+<a id="arquitetura"></a>
+
+## `ARCHITECTURE // FLUXO DO PROJETO`
+
+```mermaid
+flowchart LR
+  A["Usuário / Terminal"] --> B["UI"]; B --> C["Hospital / Service"]; C --> D["RepositorioPaciente"]; D --> E["Paciente / NivelEmergencia"]
+```
+
+<a id="execucao"></a>
+
+## `BOOT SEQUENCE // EXECUÇÃO OU UTILIZAÇÃO`
+
+```bash
+git clone https://github.com/gilbertocorrea-cmd/gestao-hospitalar.git
+cd gestao-hospitalar
+```
+
+O README original orienta JDK 17+ e a seguinte sequência na raiz: `mkdir -p out`, `javac -d out $(find src -name "*.java")` e `java -cp out src.Main`. A aplicação é de terminal, sem API web ou persistência em banco.
+
+---
+
+## `DOCUMENTATION // REFERÊNCIA TÉCNICA ORIGINAL`
 
 informações básicas de um hospital.
 
@@ -104,3 +171,15 @@ mkdir -p out
 javac -d out $(find src -name "*.java")
 java -cp out src.Main
 ```
+
+---
+
+<div align="center">
+
+## `GESTAO HOSPITALAR // BUILD • LEARN • EVOLVE`
+
+**Gilberto Corrêa**
+
+[GitHub](https://github.com/gilbertocorrea-cmd)
+
+</div>
